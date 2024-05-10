@@ -11,7 +11,7 @@ class TrainController extends Controller
     {
         $timeNow = now()->toTimeString();
         $trains = Train::where('departure_time', '>', $timeNow)->get();
-        dd($trains);
+        dd(now()->toDateString());
 
         return view('homepage', compact('trains'));
     }
