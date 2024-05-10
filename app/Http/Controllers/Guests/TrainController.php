@@ -9,9 +9,9 @@ class TrainController extends Controller
 {
     public function index()
     {
-        $timeNow = now()->toTimeString();
-        $trains = Train::where('departure_time', '>', $timeNow)->get();
-        dd(now()->toDateString());
+        $timeNow = now()->toDateString();
+        $trains = Train::where('departure_date', '>=', $timeNow)->get();
+        // dd($timeNow, $trains);
 
         return view('homepage', compact('trains'));
     }
