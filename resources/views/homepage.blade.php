@@ -50,6 +50,9 @@
                     <p>Sorry, no trains available</p>
                 </li>
             @endforelse
+            <div class="pt-3">
+                {{ $trains->links() }}
+            </div>
         </ul>
     </div>
 </body>

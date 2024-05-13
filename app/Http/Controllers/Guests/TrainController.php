@@ -10,7 +10,7 @@ class TrainController extends Controller
     public function index()
     {
         $timeNow = now()->toDateString();
-        $trains = Train::where('departure_date', '>=', $timeNow)->get();
+        $trains = Train::where('departure_date', '>=', $timeNow)->paginate(5);
         // dd($timeNow, $trains);
 
         return view('homepage', compact('trains'));
