@@ -9,8 +9,8 @@
 
 </head>
 
-<body class=" bg-gradient-to-b h-screen from-green-600 to-green-400 py-8">
-    <h1 class="text-3xl text-green-300 text-center mt-5 uppercase">Available trains </h1>
+<body class=" bg-gradient-to-b h-screen from-green-600 to-green-400 pt-10">
+    <h1 class="text-3xl text-green-300 text-center mt-10 uppercase">trains</h1>
     <h2 class="text-2xl text-green-400 text-center mb-10">from the day {{ date('Y-m-d') }}</h2>
     <div class="container shadow-lg shadow-green-600 rounded-2xl bg-gray-900 py-3 px-8 max-w-4xl mx-auto">
         <ul role="list" class="divide-y divide-gray-600">
