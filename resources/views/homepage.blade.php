@@ -10,9 +10,10 @@
 </head>
 
 <body class=" bg-gradient-to-b h-screen from-green-600 to-green-400 py-8">
-    <h1 class="text-5xl text-green-300 text-center my-5">Trains</h1>
+    <h1 class="text-3xl text-green-300 text-center mt-5 uppercase">Avaiable trains </h1>
+    <h2 class="text-2xl text-green-400 text-center mb-10">from the day {{ date('Y-m-d') }}</h2>
     <div class="container shadow-lg shadow-green-600 rounded-2xl bg-green-200 py-3 px-8 max-w-4xl mx-auto">
-        <ul role="list" class="divide-y divide-gray-400">
+        <ul role="list" class="divide-y divide-green-100">
             @forelse ($trains as $train)
                 <li class="flex justify-between gap-x-6 py-5">
                     <div class="flex min-w-0 gap-x-4">
