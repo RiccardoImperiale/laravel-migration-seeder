@@ -17,7 +17,7 @@ class TrainsTableSeeder extends Seeder
         for ($i = 0; $i < 10; $i++) {
             $train = new Train();
             $train->company = $faker->company();
-            $train->image = $faker->imageUrl(400, 400, 'cities', true, $train->arrival_station, false, 'jpg');
+            $train->image = $faker->imageUrl(400, 400, 'cities', true, $train->arrival_station, true, 'jpg');
             $train->departure_station = $faker->city();
             $train->arrival_station = $faker->city();
             $train->departure_date = $faker->dateTimeBetween('-1 month', '+30 days')->format('Y-m-d');
